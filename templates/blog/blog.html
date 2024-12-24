@@ -28,18 +28,18 @@
       <div class="col-md-4 d-flex ftco-animate">
         <div class="blog-entry justify-content-end">
           <div class="text text-center">
-            <a href="{% url 'blog:single'%}" class="block-20 img">
-              <img src="{% static 'images/image_1.jpg' %}" alt="">
+            <a href="{% url 'blog:single' pid=post.id %}" class="block-20 img">
+              <img src="{{post.image.url}}">
             </a>
             <div class="meta text-center mb-2 d-flex align-items-center justify-content-center">
               <div>
-                <span class="day">18</span>
-                <span class="mos">April</span>
-                <span class="yr">2020</span>
+                <span class="day">{{post.published_date|date:"d"}}</span>
+                <span class="mos">{{post.published_date|date:"M"}}</span>
+                <span class="yr">{{post.published_date|date:"Y"}}</span>
               </div>
             </div>
             <h3 class="heading mb-3"><a href="#">{{post.title}}</a></h3>
-            <p>{{post.content}}</p>
+            <p>{{post.content|truncatechars:10}}</p>
           </div>
         </div>
       </div>
