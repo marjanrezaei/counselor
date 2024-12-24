@@ -1,10 +1,13 @@
-{%extends 'base.html' %}
+{% extends 'base.html' %}
 {% load static %}
 {% block content %}
 <!DOCTYPE html>
 
-<div class="hero-wrap"  src="{% static 'images/bg_1.jpg' %}" data-stellar-background-ratio="0.5">
-	<div class="overlay"></div>
+<div class="hero-wrap" data-stellar-background-ratio="0.5">
+	<div class="overlay">
+		<img src="{% static 'images/bg_1.jpg' %}" alt="">
+	</div>
+
 	<div class="container">
 		<div class="row no-gutters slider-text align-items-center">
 			<div class="col-md-6 ftco-animate d-flex align-items-end">
@@ -122,8 +125,8 @@
 <section class="ftco-section ftco-no-pb ftco-no-pt">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 img img-3 d-flex justify-content-center align-items-center"
-				src="{% static 'images/about-1.jpg' %}">
+			<div class="col-md-6 img img-3 d-flex justify-content-center align-items-center">
+				<img src="{% static 'images/about-1.jpg' %}">
 			</div>
 			<div class="col-md-6 wrap-about px-md-5 ftco-animate py-5 bg-light">
 				<div class="heading-section">
@@ -183,7 +186,8 @@
 			<div class="col-md-8">
 				<div class="tab-content">
 					<div class="tab-pane container p-0 active" id="services-1">
-						<div class="img" src="{% static 'images/services-1.jpg' %}">
+						<div>
+							<img class="img" src="{% static 'images/services-1.jpg' %}" alt="">
 						</div>
 						<h3><a href="#">Relation Problem</a></h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
@@ -191,7 +195,8 @@
 							the Semantics, a large language ocean.</p>
 					</div>
 					<div class="tab-pane container p-0 fade" id="services-2">
-						<div class="img" src="{% static 'images/services-2.jpg' %}">
+						<div>
+							<img class="img" src="{% static 'images/services-2.jpg' %}" alt="">
 						</div>
 						<h3><a href="#">Couples Counseling</a></h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
@@ -199,7 +204,8 @@
 							the Semantics, a large language ocean.</p>
 					</div>
 					<div class="tab-pane container p-0 fade" id="services-3">
-						<div class="img" src="{% static 'images/services-3.jpg' %}">
+						<div>
+							<img class="img" src="{% static 'images/services-3.jpg' %}" alt="">
 						</div>
 						<h3><a href="#">Depression Treatment</a></h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
@@ -207,7 +213,8 @@
 							the Semantics, a large language ocean.</p>
 					</div>
 					<div class="tab-pane container p-0 fade" id="services-4">
-						<div class="img" src="{% static 'images/services-4.jpg' %}">
+						<div>
+							<img class="img" src="{% static 'images/services-4.jpg' %}" alt="">
 						</div>
 						<h3><a href="#">Family Problem</a></h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
@@ -215,7 +222,8 @@
 							the Semantics, a large language ocean.</p>
 					</div>
 					<div class="tab-pane container p-0 fade" id="services-5">
-						<div class="img" src="{% static 'images/services-5.jpg' %}">
+						<div>
+							<img class="img" src="{% static 'images/services-5.jpg' %}" alt="">
 						</div>
 						<h3><a href="#">Personal Problem</a></h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
@@ -223,7 +231,8 @@
 							the Semantics, a large language ocean.</p>
 					</div>
 					<div class="tab-pane container p-0 fade" id="services-6">
-						<div class="img" src="{% static 'images/services-6.jpg' %}">
+						<div>
+							<img class="img" src="{% static 'images/services-6.jpg' %}" alt="">
 						</div>
 						<h3><a href="#">Business Problem</a></h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
@@ -238,8 +247,9 @@
 
 
 <section class="ftco-section testimony-section">
-	<div class="img img-bg border" src="{% static 'images/bg_4.jpg' %}"></div>
-	<div class="overlay"></div>
+	<div class="overlay">
+		<img class="img img-bg border" src="{% static 'images/bg_4.jpg' %}" alt="">
+	</div>
 	<div class="container">
 		<div class="row justify-content-center mb-5">
 			<div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
@@ -258,7 +268,9 @@
 								<p class="mb-4">Far far away, behind the word mountains, far from the countries
 									Vokalia and Consonantia, there live the blind texts.</p>
 								<div class="d-flex align-items-center">
-									<div class="user-img" src="{% static 'images/person_1.jpg' %}"></div>
+									<div>
+										<img class="user-img" src="{% static 'images/person_1.jpg' %}" alt="">
+									</div>
 									<div class="pl-3">
 										<p class="name">Roger Scott</p>
 										<span class="position">Marketing Manager</span>
@@ -275,7 +287,9 @@
 								<p class="mb-4">Far far away, behind the word mountains, far from the countries
 									Vokalia and Consonantia, there live the blind texts.</p>
 								<div class="d-flex align-items-center">
-									<div class="user-img" src="{% static 'images/person_2.jpg' %}"></div>
+									<div>
+										<img class="user-img" src="{% static 'images/person_2.jpg' %}" alt="">
+									</div>
 									<div class="pl-3">
 										<p class="name">Roger Scott</p>
 										<span class="position">Marketing Manager</span>
@@ -292,7 +306,9 @@
 								<p class="mb-4">Far far away, behind the word mountains, far from the countries
 									Vokalia and Consonantia, there live the blind texts.</p>
 								<div class="d-flex align-items-center">
-									<div class="user-img" src="{% static 'images/person_3.jpg' %}"></div>
+									<div>
+										<img class="user-img" src="{% static 'images/person_3.jpg' %}" alt="">
+									</div>
 									<div class="pl-3">
 										<p class="name">Roger Scott</p>
 										<span class="position">Marketing Manager</span>
@@ -309,7 +325,9 @@
 								<p class="mb-4">Far far away, behind the word mountains, far from the countries
 									Vokalia and Consonantia, there live the blind texts.</p>
 								<div class="d-flex align-items-center">
-									<div class="user-img" src="{% static 'images/person_1.jpg' %}"></div>
+									<div>
+										<img class="user-img" src="{% static 'images/person_1.jpg' %}" alt="">
+									</div>
 									<div class="pl-3">
 										<p class="name">Roger Scott</p>
 										<span class="position">Marketing Manager</span>
@@ -326,7 +344,9 @@
 								<p class="mb-4">Far far away, behind the word mountains, far from the countries
 									Vokalia and Consonantia, there live the blind texts.</p>
 								<div class="d-flex align-items-center">
-									<div class="user-img" src="{% static 'images/person_2.jpg' %}"></div>
+									<div>
+										<img class="user-img" src="{% static 'images/person_2.jpg' %}" alt="">
+									</div>
 									<div class="pl-3">
 										<p class="name">Roger Scott</p>
 										<span class="position">Marketing Manager</span>
@@ -400,8 +420,10 @@
 	</div>
 </section>
 
-<section class="ftco-appointment ftco-section img" src="{% static 'images/bg_2.jpg'%}">
-	<div class="overlay"></div>
+<section class="ftco-appointment ftco-section img">
+	<div class="overlay">
+		<img src="{% static 'images/bg_2.jpg'%}" alt="">
+	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 half ftco-animate">
@@ -466,7 +488,8 @@
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
 					<div class="text text-center">
-						<a href="{% url 'blog:single' %}" class="block-20 img" src="{% static 'images/image_1.jpg' %}">
+						<a href="{% url 'blog:single' %}">
+							<img class="block-20 img" src="{% static 'images/image_1.jpg' %}" alt="">
 						</a>
 						<div class="meta text-center mb-2 d-flex align-items-center justify-content-center">
 							<div>
@@ -484,7 +507,8 @@
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
 					<div class="text text-center">
-						<a href="{% url 'blog:single' %}" class="block-20 img" src="{% static 'images/image_2.jpg' %}">
+						<a href="{% url 'blog:single' %}">
+							<img class="block-20 img" src="{% static 'images/image_2.jpg' %}" alt="">
 						</a>
 						<div class="meta text-center mb-2 d-flex align-items-center justify-content-center">
 							<div>
@@ -502,7 +526,8 @@
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
 					<div class="text text-center">
-						<a href="{% url 'blog:single' %}" class="block-20 img" src="{% static 'images/image_3.jpg' %}">
+						<a href="{% url 'blog:single' %}">
+							<img class="block-20 img" src="{% static 'images/image_3.jpg' %}" alt="">
 						</a>
 						<div class="meta text-center mb-2 d-flex align-items-center justify-content-center">
 							<div>

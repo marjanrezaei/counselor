@@ -1,10 +1,12 @@
-{%extends 'base.html' %}
+{% extends 'base.html' %}
 {% load static %}
-{% block content %} src="{% static 'images/bg_5.jpg' %}"
+{% block content %}
 <!DOCTYPE html>
 
-<section class="hero-wrap hero-wrap-2" src="{% static 'images/bg_5.jpg' %}" data-stellar-background-ratio="0.5">
-	<div class="overlay"></div>
+<section class="hero-wrap hero-wrap-2" data-stellar-background-ratio="0.5">
+	<div class="overlay">
+		<img src="{% static 'images/bg_5.jpg' %}" alt="">
+	</div>
 	<div class="container">
 		<div class="row no-gutters slider-text align-items-end justify-content-center">
 			<div class="col-md-9 ftco-animate mb-5 text-center">
@@ -79,7 +81,9 @@
 		<div class="row no-gutters">
 			<div class="col-md-6">
 				<div class="services-wrap d-flex">
-					<div class="img" src="{% static 'images/services-1.jpg' %}"></div>
+					<div>
+						<img class="img" src="{% static 'images/services-1.jpg' %}" alt="">
+					</div>
 					<div class="text">
 						<h2>Relation Problem</h2>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
@@ -90,7 +94,9 @@
 			</div>
 			<div class="col-md-6">
 				<div class="services-wrap d-flex">
-					<div class="img" src="{% static 'images/services-2.jpg' %}"></div>
+					<div>
+						<img class="img" src="{% static 'images/services-2.jpg' %}" alt="">
+					</div>
 					<div class="text">
 						<h2>Couples Counseling</h2>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
@@ -102,7 +108,9 @@
 
 			<div class="col-md-6">
 				<div class="services-wrap d-flex">
-					<div class="img order-md-last" src="{% static 'images/services-3.jpg' %}"></div>
+					<div>
+						<img class="img order-md-last" src="{% static 'images/services-3.jpg' %}" alt="">
+					</div>
 					<div class="text">
 						<h2>Depression Treatment</h2>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
@@ -113,7 +121,9 @@
 			</div>
 			<div class="col-md-6">
 				<div class="services-wrap d-flex">
-					<div class="img order-md-last" src="{% static 'images/services-4.jpg' %}"></div>
+					<div>
+						<img class="img order-md-last" src="{% static 'images/services-4.jpg' %}" alt="">
+					</div>
 					<div class="text">
 						<h2>Family Problem</h2>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
@@ -125,7 +135,9 @@
 
 			<div class="col-md-6">
 				<div class="services-wrap d-flex">
-					<div class="img" src="{% static 'images/services-5.jpg' %}"></div>
+					<div>
+						<img class="img" src="{% static 'images/services-5.jpg' %}" alt="">
+					</div>
 					<div class="text">
 						<h2>Personal Problem</h2>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
@@ -136,7 +148,9 @@
 			</div>
 			<div class="col-md-6">
 				<div class="services-wrap d-flex">
-					<div class="img" src="{% static 'images/services-6.jpg' %}"></div>
+					<div>
+						<img class="img" src="{% static 'images/services-6.jpg' %}" alt="">
+					</div>
 					<div class="text">
 						<h2>Business Problem</h2>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
